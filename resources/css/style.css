@@ -1,0 +1,142 @@
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: lightsalmon;
+  }
+
+nav{
+    display: flex;
+    align-items: end;
+    background-color: teal;
+    color: lightsalmon;
+    padding-top: 1rem;
+    height: 80px;
+}
+
+nav p, nav p a{
+    padding: 0 2rem;
+    color: lightsalmon;
+    font-size: 1.8rem;    
+    text-decoration: none;
+}
+
+.intro{
+    background: url("https://codecademy-content.s3.amazonaws.com/PRO/independent-practice-projects/responsive-club-site/img/runner-splash.jpg");
+    height: 30rem;
+    background-position: center;
+    background-repeat: none;
+    padding-top: 1rem;
+}
+
+.intro img{
+    width: 15rem;
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.intro h1{
+    color: coral;
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgba(0.5, 0.5, 0.5, 0.5);
+    margin-top: 10rem;
+    padding: 2rem; 
+
+}
+
+.summary{
+    margin: 4rem auto;
+    padding: 0 1rem;
+
+}
+.summary h2{
+    color: yellow;
+    font-size: 2rem;
+}
+
+.summary p{
+    color: white;
+    font-size: 1.6rem;
+}
+
+.photos img {
+    width: 100%;
+    margin: 4rem auto;
+}
+
+.testimonial {
+    background-color: teal;
+    height: 20rem;
+    margin: 4rem auto;
+    color: yellow;
+    padding: 0 1rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.testimonial p{
+    text-align: right;
+    padding-right: 2rem;
+}
+
+.meetup{
+    margin: 4rem auto;
+}
+
+.meetup h1{
+    color: yellow;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.meetup img{
+    margin: auto;
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+@media only screen and (max-width: 1048px) {
+    .photos img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    nav{
+        display: block;
+        height: 15rem;
+    }
+  }
+  
+  @media only screen and (max-width: 640px) {
+    .intro h1 {
+      margin-top: 2rem;
+    }
+  
+    .intro {
+      max-height: 200px;
+    }
+  
+    .photos img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    li {
+      display: block;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .testimonial h1 {
+      font-size: 2rem;
+    }
+  
+    .photos img {
+      width: 100%;
+    }
+  }
